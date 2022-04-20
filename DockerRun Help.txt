@@ -1,0 +1,15 @@
+Go to project Direcotry and perform below commnds for docker deployment
+Make sure docker engine is running...
+
+1st command in cmd-- 
+	docker build -f docker file name -t imageName . (Dot means image will create in root directory )
+ --->	docker build -f Dockerfile -t docker-myapps .
+ 	
+2nd command-->
+--->	docker images (you will get all the images created)
+
+3rd command--->
+	docker run -p 8080/8080 image_name		(port will be same in application.properties and Docker file)
+--->	docker run -p 8080:8080 docker-myapps
+
+ 					
